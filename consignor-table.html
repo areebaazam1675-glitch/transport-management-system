@@ -1,0 +1,20 @@
+<div class="container mx-auto p-6">
+  <h2 class="text-2xl font-bold mb-4">Consignor-wise Trips</h2>
+
+  <!-- Filters -->
+  <div class="flex gap-4 mb-4">
+    <select id="filterConsignor" class="input"></select>
+    <select id="filterReceived" class="input">
+      <option value="all">All</option>
+      <option value="Yes">Yes</option>
+      <option value="No">No</option>
+    </select>
+    <button id="exportBtn" class="btn bg-green-600 text-white">Export PDF</button>
+  </div>
+
+  <!-- Consignor Tables -->
+  <div id="consignorTables"></div>
+</div>
+
+<script type="module" src="js/tables.js"></script>
+<script type="module" src="js/export-msg.js"></script>

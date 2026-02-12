@@ -1,0 +1,25 @@
+<form id="tripForm" class="flex flex-col gap-4 max-w-xl mx-auto p-6 bg-white shadow rounded">
+  <label>Vehicle Number
+    <select id="vehicle" required></select>
+  </label>
+  <label>Date
+    <input type="text" id="date" placeholder="DD-MM-YYYY" required />
+  </label>
+  <label>Trip Details
+    <textarea id="details" required></textarea>
+  </label>
+  <label>Consignor
+    <input list="consignors" id="consignor" />
+    <datalist id="consignors"></datalist>
+  </label>
+  <label>Rate<input type="number" id="rate" required/></label>
+  <label>Advance<input type="number" id="advance" required/></label>
+  <label>Diesel + Expense<input type="number" id="diesel"/></label>
+  <label>WT<input type="number" id="wt"/></label>
+  <label>MT<input type="number" id="mt"/></label>
+  <label>GT<input type="number" id="gt"/></label>
+  <label>Received
+    <select id="received"><option value="Yes">Yes</option><option value="No">No</option></select>
+  </label>
+  <button type="submit" class="btn bg-blue-600 text-white">Save Trip</button>
+</form>
